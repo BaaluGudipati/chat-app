@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 import './App.css';
 
 // Initialize socket connection outside component to prevent multiple connections
-const socket = io('http://localhost:5000');
+const socket = io('https://chat-app-2-qeis.onrender.com/');
 
 function App() {
   const [username, setUsername] = useState('');
