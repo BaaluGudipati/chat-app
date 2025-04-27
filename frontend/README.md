@@ -1,12 +1,41 @@
-# React + Vite
+Login Process
+When you first load the application, you'll be prompted to enter a username.
+Note: The application does not have a real password mechanism in place at the moment, so you can use any username you wish to join the chat room.
+Username: Enter any name you like. No password is required for login.
+After entering your username, you will be connected to the chat room.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Frontend (React + Vite)
+The frontend of this application is hosted at:
+Frontend URL: https://chat-app-254t.vercel.app/
 
-## Expanding the ESLint configuration
+Backend (Node.js + Socket.io)
+The backend is deployed and hosted at:
+Backend URL: https://chat-app-2-qeis.onrender.com
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Please ensure the frontend is connected to the correct backend URL. You will need to update this in the frontend code to connect the WebSocket to the correct backend server.
+
+Clone the respository
+git clone https://github.com/BaaluGudipati/chat-app.git
+cd chat-app
+
+Install dependencies
+For Backend:
+Navigate to the backend folder.
+Run npm install to install dependencies.
+Start the backend server using npm start.
+
+cd backend
+npm install
+npm start
+
+
+For Frontend:
+Navigate to the frontend folder.
+Run npm install to install dependencies.
+Start the frontend using npm run dev.
+
+cd frontend
+npm install
+npm run dev
